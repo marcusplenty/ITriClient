@@ -12,3 +12,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+.sidebar {
+  grid-column: 1;
+  grid-row: 2;
+  background: #e02b2a;
+  color: white;
+  padding: 2rem;
+}

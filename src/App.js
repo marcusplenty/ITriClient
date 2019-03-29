@@ -9,6 +9,7 @@ import mergeImg from 'merge-img'
 import base64Img from "base64-img"
 import Overlay from 'react-image-overlay'
 import html2canvas from 'html2canvas';
+import MainContainer from './containers/MainContainer'
 
 
 
@@ -69,24 +70,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {this.state.pic!=null?
-          <div>
-            <span> Move and readjust glasses to get a good fit </span>
-            <div id="please">
-              <img id="jump" src={this.state.pic}/>
-              <Draggable onDrag={this.eventLogger}>
-                <img src={"http://pngimg.com/uploads/glasses/glasses_PNG54356.png"} width="200" height="50"/>
-              </Draggable>
-            </div>
-            <button onClick={this.screenshot}> Save Me</button>
-            <button onClick={this.retake}> Retake Head Measurement </button>
-          </div>:
-          <div>
-            <Camera onTakePhoto = { (dataUri) => { this.onTakePhoto(dataUri); } } />
-            <p> take your photo for head measurements </p>
-         </div>
-      }
-
+        <MainContainer/> 
       </div>
     );
   }

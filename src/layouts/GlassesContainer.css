@@ -1,0 +1,23 @@
+
+.GlassesContainer{
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  grid-column: 3;
+  grid-row: 2;
+  background: blue;
+  color: grey;
+  padding: 2%;
+  box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06),
+      1px 3px 8px rgba(39, 44, 49, 0.03);
+  height: 300px;
+  width: 150px;
+  flex-direction: column;
+
+}
+
+ .glasses{
+   z-index: 2;
+ }

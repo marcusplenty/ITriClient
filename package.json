@@ -15,7 +15,9 @@
     "react-draggable": "^3.2.1",
     "react-html5-camera-photo": "^1.3.0",
     "react-image-overlay": "^1.0.5",
-    "react-scripts": "2.1.8"
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8",
+    "react-webcam": "^1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
